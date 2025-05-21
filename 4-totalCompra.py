@@ -33,8 +33,7 @@ while repetir:
     qtdProduto.append(int(input("Informe a quantidade comprada: ")))
      
     repetir = pergunta()
-    
-    
+        
 
 """Função que organiza os produtos e faz o calculo de valor"""
 
@@ -47,6 +46,7 @@ def Notinha(produto, preco, qtd):
     for i in range(itens+1):
         valorProdTotal.append(preco[i]*qtd[i])
         subTotal+=valorProdTotal[i]
+        
         print("{} --- {} --- UNIT {} --- Valor {:.2f} --- Total {:.2f}".format((i+1),produto[i],qtd[i],preco[i],valorProdTotal[i]))
     print("\nSubtotal: R$ {:.2f}".format(subTotal))
 
