@@ -1,0 +1,1 @@
+print("HELLO WORLD!\nBem vindo ao primeiro codigo de python!")
