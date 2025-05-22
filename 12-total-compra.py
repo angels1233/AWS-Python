@@ -1,10 +1,11 @@
+#variáveis globais
 repetir = True
 itens = 0
 nomeProduto = []
 precoProduto = []
 qtdProduto = []
 
-"""Função pra retornar a pergunta caso a resposta seja diferente da esperada"""
+#Função pra retornar a pergunta caso a resposta seja diferente da esperada
 
 def pergunta():
     resposta = input("Deseja adicionar mais produtos? (S/N):")
@@ -19,12 +20,12 @@ def pergunta():
             print("Resposta invalida!")
             return pergunta()
 
-
+#Preenchimento dos produtos de forma que se repete de acordo com o usuário
 while repetir:
     nomeProduto.append(input("Digite o nome do produto: "))  
     precoProduto.append(input("Informe o valor do produto: "))
 
-    """Tratamento de erro caso o usuário coloque virgulo ao invez de ponto no valor"""
+    #Tratamento de erro caso o usuário coloque virgulo ao invez de ponto no valor
     try:
         precoProduto[itens] = float(precoProduto[itens])
     except:
@@ -35,7 +36,7 @@ while repetir:
     repetir = pergunta()
         
 
-"""Função que organiza os produtos e faz o calculo de valor"""
+#Função que organiza os produtos e faz o calculo de valor
 
 def Notinha(produto, preco, qtd):
     global itens
